@@ -11,7 +11,7 @@
     
     <meta property="og:description" content="Esperamos que nos acompañes a celebrar mis Quince Años. Por favor, confirma tu asistencia.">
     
-    <meta property="og:image" content="https://pequecreacioneskaelhn.github.io/Invitaciones_15s/invitacion_15años.png">
+    <meta property="og:image" content="https://pequecreacioneskaelhn.github.io/Invitaciones_15s/invitacion15.png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
     
@@ -19,133 +19,147 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-    <style>
+   <style>
     /* REGLA UNIVERSAL PARA CORREGIR PROBLEMAS DE ANCHO EN MÓVILES */
     * {
         box-sizing: border-box;
     }
-        /* Definición de colores principales */
-        :root {
-            --color-principal: #e6b3b3; /* Rosa Pálido/Viejo */
-            --color-secundario: #ffffff; /* Blanco */
-            --color-texto: #333333; /* Gris Oscuro */
-            --color-botones: #ff69b4; /* Pink Intenso */
-        }
+    
+    /* Definición de colores principales */
+    :root {
+        --color-principal: #e6b3b3; /* Rosa Pálido/Viejo */
+        --color-secundario: #ffffff; /* Blanco */
+        --color-texto: #333333; /* Gris Oscuro */
+        --color-botones: #ff69b4; /* Pink Intenso */
+    }
 
-        /* Estilos Generales */
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            
-            /* --- FONDO: Combinación de Degradado(Brillo sutil) --- */
-            background: 
-                linear-gradient(to top, var(--color-principal) 5%, var(--color-secundario) 85%); 
-            background-size: cover;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: var(--color-texto); 
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        /* FONDO DE LA TARJETA (Blanco semi-transparente) */
-        .contenedor-tarjeta {
-            background-color: rgba(255, 255, 255, 0.95); 
-            border-radius: 15px; 
-            padding: 40px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.8); 
-            text-align: center;
-            max-width: 550px;
-            width: 100%;
-            animation: fadeIn 1s ease-out;
-            position: relative; 
-            border: 3px solid var(--color-principal); 
-            color: var(--color-texto); 
-        }
-
-        /* Título Principal (Nombre de la Quinceañera/Evento) */
-        h1 {
-            font-family: 'Great Vibes', cursive; 
-            font-weight: 400; 
-            color: var(--color-principal); 
-            font-size: 4.5em; 
-            margin-top: 5px;
-            margin-bottom: 15px;
-            line-height: 1.1;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.1); 
-        }
+    /* Estilos Generales */
+    body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
         
-        /* Subtítulo (Playfair Display) */
-        h2 {
-            font-family: 'Playfair Display', serif; /* Nueva fuente elegante con serifa */
-            font-weight: 900; /* Peso extra fuerte para impacto */
-            font-size: 1.5em;
-            color: var(--color-texto);
-            margin-bottom: 25px;
-            text-transform: uppercase; /* Formal y moderno */
-        }
+        /* --- FONDO: Combinación de Degradado y Imagen Decorativa (Brillo sutil) --- */
+        background: 
+            url('fondo-15-anos.png') no-repeat center center fixed, 
+            linear-gradient(to top, var(--color-principal) 5%, var(--color-secundario) 85%); 
+        background-size: cover;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: var(--color-texto); 
+        padding: 20px;
+        box-sizing: border-box;
+    }
 
-        p {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
+    /* FONDO DE LA TARJETA (Blanco semi-transparente) */
+    .contenedor-tarjeta {
+        background-color: rgba(255, 255, 255, 0.95); 
+        border-radius: 15px; 
+        padding: 40px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.8); 
+        text-align: center;
+        max-width: 550px;
+        width: 100%;
+        animation: fadeIn 1s ease-out;
+        position: relative; 
+        border: 3px solid var(--color-principal); 
+        color: var(--color-texto); 
+        
+        /* --- CORRECCIÓN DE BORDES EN MÓVILES --- */
+        max-width: calc(100% - 20px); /* Deja un margen de 10px a cada lado */
+        overflow-x: hidden; /* Oculta cualquier cosa que intente salirse horizontalmente */
+    }
 
-        /* Contenedor de Botones */
-        .opciones-botones {
-            display: flex; flex-direction: column; gap: 15px; margin-top: 30px;
-        }
+    /* Título Principal (Nombre de la Quinceañera/Evento) */
+    h1 {
+        font-family: 'Great Vibes', cursive; 
+        font-weight: 400; 
+        color: var(--color-principal); 
+        font-size: 4.5em; 
+        margin-top: 5px;
+        margin-bottom: 15px;
+        line-height: 1.1;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    }
+    
+    /* Subtítulo (Playfair Display) */
+    h2 {
+        font-family: 'Playfair Display', serif; 
+        font-weight: 900; 
+        font-size: 1.5em;
+        color: var(--color-texto);
+        margin-bottom: 25px;
+        text-transform: uppercase; 
+    }
 
-        /* Estilo Base del Botón */
-        .boton-wa {
-            display: inline-flex; align-items: center; justify-content: center;
-            padding: 15px 30px; 
-            color: var(--color-secundario); 
-            text-decoration: none; border-radius: 6px; 
-            font-size: 1.1em; font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            border: none; cursor: pointer; width: 100%; max-width: 350px; margin: 0 auto;
-        }
+    p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
 
-        .boton-wa i { margin-right: 10px; font-size: 1.3em; }
+    /* Contenedor de Botones */
+    .opciones-botones {
+        display: flex; 
+        flex-direction: column; 
+        gap: 15px; 
+        margin-top: 30px;
+    }
 
-        /* Botones: Fondo ROSADO INTENSO */
-        .boton-confirma, .boton-declina {
-            background-color: var(--color-botones); 
-            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.5);
-        }
+    /* Estilo Base del Botón */
+    .boton-wa {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 15px 30px; 
+        color: var(--color-secundario); 
+        text-decoration: none; border-radius: 6px; 
+        font-size: 1.1em; font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        border: none; cursor: pointer; width: 100%; max-width: 350px; margin: 0 auto;
+        
+        /* --- CORRECCIÓN DE TEXTO LARGO EN BOTONES --- */
+        white-space: normal; 
+        word-wrap: break-word; 
+        text-align: center; 
+    }
 
-        .boton-confirma:hover, .boton-declina:hover {
-            background-color: #ff4a99; 
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.8);
-        }
+    .boton-wa i { margin-right: 10px; font-size: 1.3em; }
 
-        /* MARCA EN LA ESQUINA INFERIOR DERECHA DE LA PANTALLA (FUERA DE LA TARJETA) */
-        .footer-marca {
-            position: fixed; 
-            bottom: 20px;
-            right: 20px;
-            font-size: 0.9em;
-            color: var(--color-botones); 
-            font-weight: 600;
-            font-family: 'Open Sans', sans-serif;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
-            z-index: 99; 
-        }
+    /* Botones: Fondo ROSADO INTENSO */
+    .boton-confirma, .boton-declina {
+        background-color: var(--color-botones); 
+        box-shadow: 0 5px 15px rgba(255, 105, 180, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.5);
+    }
 
-        /* Responsive para pantallas pequeñas */
-        @media (max-width: 600px) {
-            h1 { font-size: 3.5em; }
-            h2 { font-size: 1.2em; }
-            .contenedor-tarjeta { padding: 25px; }
-            .boton-wa { font-size: 1em; padding: 12px 25px; }
-            .footer-marca { bottom: 10px; right: 10px; font-size: 0.8em; }
-        }
-    </style>
+    .boton-confirma:hover, .boton-declina:hover {
+        background-color: #ff4a99; 
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(255, 105, 180, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+
+    /* MARCA EN LA ESQUINA INFERIOR DERECHA DE LA PANTALLA (FUERA DE LA TARJETA) */
+    .footer-marca {
+        position: fixed; 
+        bottom: 20px;
+        right: 20px;
+        font-size: 0.9em;
+        color: var(--color-botones); 
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+        z-index: 99; 
+    }
+
+    /* Responsive para pantallas pequeñas */
+    @media (max-width: 600px) {
+        h1 { font-size: 3.5em; }
+        h2 { font-size: 1.2em; }
+        .contenedor-tarjeta { padding: 25px; }
+        .boton-wa { font-size: 1em; padding: 12px 25px; }
+        .footer-marca { bottom: 10px; right: 10px; font-size: 0.8em; }
+    }
+</style>
 </head>
 <body>
     <div class="contenedor-tarjeta">
@@ -180,6 +194,7 @@
 </body>
 
 </html>
+
 
 
 
